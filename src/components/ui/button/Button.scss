@@ -1,0 +1,32 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+button.defaultbutton {
+    @include flexCenter(row);
+    gap: 10px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+  
+    & > p.title {
+        flex: 1;
+        text-align: center;
+        min-width: 55px;
+        margin: 5px;
+    }
+}
+
+div.favoriteoverlay {
+    position: relative; 
+
+    & > div.favorite {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        filter: invert(23%) sepia(85%) saturate(7303%) hue-rotate(357deg) brightness(98%) contrast(121%);
+        cursor: pointer;
+    }
+}

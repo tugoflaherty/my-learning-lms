@@ -1,0 +1,31 @@
+@import "../../variables";
+@import "../../mixins";
+
+nav {
+  display: flex;
+  overflow: hidden;
+  background-color: $subheaderBackgroundColour;
+  
+  & > div.navItem { 
+    padding: 10px; 
+
+    & a {
+      color: $subheaderTextColour; 
+      text-decoration: none;
+    }
+
+    & a.navSelected {
+      color: $standardTextColour;
+    }
+  }
+
+  & > div.navItem:hover {
+    background-color: $navbarHoverColour; 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    @include flexCenter(column);
+  }
+}

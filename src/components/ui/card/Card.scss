@@ -1,0 +1,8 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.card {
+  background-color: $cardBackgroundColour;
+  border-radius: 6px;
+  @include defaultShadow();
+}

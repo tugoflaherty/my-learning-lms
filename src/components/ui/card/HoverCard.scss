@@ -1,0 +1,7 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.hovercard:hover {
+  @include defaultHover();
+  border-radius: 6px;
+}

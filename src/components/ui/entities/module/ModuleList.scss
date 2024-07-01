@@ -1,0 +1,17 @@
+@import "../../../../variables";
+@import "../../../../mixins";
+
+div.info {
+  & > h3.resultsheading {
+    font-size: $moduleItemSubheaderTextSize;
+    color: $standardTextColour;
+    text-align: center;
+    margin: 0px 0px 25px 0px;
+  }
+}
+
+div.list {
+  @include flexCenter(row);
+  flex-wrap: wrap;
+  gap: 20px;
+}

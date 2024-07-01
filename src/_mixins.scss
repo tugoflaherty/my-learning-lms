@@ -1,0 +1,31 @@
+@mixin flexCenter($flexDirection) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
+
+@mixin flexEnd($flexDirection) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: $flexDirection;
+}
+
+@mixin defaultShadow() {
+    box-shadow: 5px 0px 15px 5px rgba(0.0,0.0,0.0,0.3);
+    filter: brightness(95%);
+}
+
+@mixin defaultHover() {
+    transform: translate(5px,-5px);
+    box-shadow: 10px 5px 20px 10px rgba(70,70,70,0.3);
+    filter: brightness(100%);
+}
+
+@mixin positionFixedCenter() {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

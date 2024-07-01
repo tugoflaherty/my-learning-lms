@@ -1,0 +1,20 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+label {
+    font-size: $formInputLabelTextSize;
+    font-weight: 500;
+}
+
+p.inputdescription {
+    font-size: $formInputTextSize;
+}
+
+p.errormessage {
+    font-size: $formInputTextSize;
+    color: $errorMessageTextColour;
+}
+
+div.textinput, div.selectinput, div.textareainput {
+    padding: 5px 0px;
+}

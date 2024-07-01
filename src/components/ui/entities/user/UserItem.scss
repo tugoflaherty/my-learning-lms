@@ -1,0 +1,59 @@
+@import "../../../../variables";
+@import "../../../../mixins";
+
+div.listview {
+  @include flexCenter(row);
+  width: 850px;
+  height: 100px;
+
+  & > .image {
+    width: 150px;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+
+    & > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px 0px 0px 5px;
+    }
+  }
+
+  & > .content {
+      width: 100%;
+      padding: 10px;
+    
+      & > h2 { 
+        font-size: $moduleItemSubheaderTextSize;
+        color: $standardTextColour;
+      }
+
+      & > h3 { 
+        font-size: $moduleItemSubsubheaderTextSize;
+        color: $subsubheaderTextColour;
+      }
+
+      & > h4 { 
+        font-size: $moduleItemSubsubsubheaderTextSize;
+        color: $subsubheaderTextColour;
+      }
+    }
+
+  & > .modulebuttons {
+    padding-right: 50px;
+
+    & button {
+      font: inherit;
+      cursor: pointer;
+      border: 1px solid $moduleCardButtonBorderColour;
+      background-color: transparent;
+      height: 30px;
+      padding: 5px;
+      border-radius: 4px;
+
+      &:hover, :active {
+        background-color: $moduleCardButtonHoverColour;
+      }
+    }
+  }
+}

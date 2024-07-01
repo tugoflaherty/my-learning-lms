@@ -1,0 +1,22 @@
+@import "../../variables";
+@import "../../mixins";
+
+div#root {
+  background: $pageBackgroundColour;
+  min-height: 100%;
+  @include flexCenter(row);
+
+  & > div.centrepane {
+    background: $pageCentrepaneBackgroundColour;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+
+    & > main {
+      padding: 30px;
+      width: 100%;
+    }
+  }
+}

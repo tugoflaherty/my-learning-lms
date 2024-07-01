@@ -1,0 +1,14 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+footer p {
+  & > a {
+    font-size: $footerTextSize;
+    text-decoration: none;
+    color: $standardTextColour;
+  }
+
+  & > span {
+    font-size: $footerTextSize;
+  }
+}

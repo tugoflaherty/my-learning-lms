@@ -1,0 +1,12 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+form.reusableform {
+    padding: 0px 10px;
+
+    & > div.formbuttons {
+        @include flexCenter(row);
+        padding: 10px;
+        position: relative;
+    }
+}
