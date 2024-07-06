@@ -1,0 +1,33 @@
+@import "../../variables";
+@import "../../mixins";
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.userdetail {
+    padding: 10px;
+    @include flexCenter(row);
+    gap: 20%;
+    padding-top: 5%;
+}
+
+.userdetailh2 {
+    padding: 10px;
+}
+
+.userdetailh3 {
+    padding: 10px;
+}
+
+.userdetailp {
+    padding: 10px;
+}
+
+.userdetailimage {
+    border-radius: 5px;
+}
+
+.navigate {
+    cursor: pointer;
+}

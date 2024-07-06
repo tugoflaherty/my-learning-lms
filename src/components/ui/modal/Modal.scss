@@ -37,7 +37,7 @@ main.modalpane {
 
   & div.modalbuttons {
     @include flexCenter(row);
-    justify-content: flex-end;
+    justify-content: flex-center;
     padding: 10px;
     position: relative;
     right: 0px;

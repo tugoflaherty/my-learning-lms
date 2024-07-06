@@ -1,0 +1,33 @@
+@import "../../variables";
+@import "../../mixins";
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.moduledetail {
+    padding: 10px;
+    @include flexCenter(row);
+    gap: 20%;
+    padding-top: 5%;
+}
+
+.moduledetailh2 {
+    padding: 10px;
+}
+
+.moduledetailh3 {
+    padding: 10px;
+}
+
+.moduledetailp {
+    padding: 10px;
+}
+
+.moduledetailimage {
+    border-radius: 5px;
+}
+
+.navigate {
+    cursor: pointer;
+}
